@@ -1,0 +1,28 @@
+body{
+    background-color: #6e62e7;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+.cadastro_cliente,.CNPJ,.quantidade,.v_unitario,.data_e, .data_f, #res,#tot,p,.total{
+    position:relative;
+    left:37%;
+    top:29%;
+    width:300px;
+    height:30px;
+    
+}
+.input{
+    position:relative;
+    left:37%;
+    top:29%;
+    width:300px;
+    height:30px;
+    margin-top: 10px;
+    
+
+}
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro de clientes</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="stilo.css">
+</head>
+<body>
+    <h1>Cadastro de clientes </h1>
+    <section>
+        <div>
+    <form action="">
+    <div class="cadastro_cliente">
+        <label for="Cliente">Cliente: </label>
+        <input type="text" id="nome_cli" placeholder="Digite o nome do cliente">
+    </div>
+    <div class="CNPJ">
+        <label for="">CNPJ: </label>
+        <input type="text" id="cnpj"  placeholder="informe o CNPJ">
+    </div>
+    <div class="quantidade">
+        <label for="quantidade_de_peças">Quantidade de peças: </label>
+        <input type="number" id="quantp" placeholder="informe a quantidade">
+    </div>
+    <div class="v_unitario">
+        <label for="ValorUnitario">Valor Unitário: </label>
+        <input type="number" id="quant_u" placeholder="informe o valor Unitário">
+    </div>
+    <div class="data_e">
+        <label for="DataEntrada">Data Entrada: </label>
+        <input type="date" id="data1">
+    </div>
+    <div class="data_f">    
+        <label for="DataSaída">Data Saída: </label>
+        <input type="date" id="data2" onclick="calcula_valor()">
+        
+    </div>
+    <div class="total">
+        <label for="totalDias"> Total de dias:</label>
+        <input type="text" id="calcdata">
+    </div>
+    <div class="input">
+        <input  type="button" id="btnenviar"  value="Enviar" onclick="enviar_info()">
+        <input type="reset" id="apagar_info" value="Apagar">
+        <input type="button" id="calc" value="calcular" onclick="calcula_valor()">
+        <input type="button" id="totdias" value="Dias" onclick="CalcDate()">
+    </div>    
+
+    </form>
+</section>
+<div>
+    <p>Retorno das infomaçõe enviadas: 
+        <div id="res">
+
+        </div>
+        
+    </p>
+    <p>
+        <div id="tot"></div>
+    </p>
+    <p>
+        <div id="resdata"></div>
+    </p>
+    
+</div>
+    
+</body>
+</html>
